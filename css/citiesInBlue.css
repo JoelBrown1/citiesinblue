@@ -1,0 +1,267 @@
+body{
+	background: transparent url(../images/page_bg.jpg) top center repeat-y;
+	font-family: "Helvetica", Arial, Sans-serif; 
+	text-align: left;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+	display: block;
+	/* -webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;*/
+	font-weight: bold;
+	font-family: "Helvetica", Arial, Sans-serif;
+}
+#cContainer{
+	position: relative;
+	background:transparent url(../images/interactiveMapBgnd.jpg) top left no-repeat;
+	width: 670px;
+	min-height: 734px;
+	margin: 0 auto;
+}
+.bluesCity{
+	position:absolute;
+	padding: 18px;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	cursor: pointer;
+	background: transparent url(../images/cityMarker.png) top left no-repeat;
+}
+.bluesCity:hover{
+	background: transparent url(../images/cityMarker.png) top right no-repeat;
+}
+#overlay{
+	background-color: rgba( 0, 0, 0, .7);
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 999;
+}
+/* ======================= setting up the over states =========================== */
+.cOver{
+	position: absolute;
+}
+/* ======================= setting up the over states =========================== */
+
+/* ======================= test css to see the popup work ======================= */
+.outter-popup {
+  position: relative;
+  background: rgba(50, 130, 186, 1);
+  width: auto;
+  max-width: 772px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.outter-popup li{
+	text-align: left;
+}
+
+.lightBlueShell{
+	width: 742px;
+	border-left: 15px rgba(50, 130, 186, 1) solid;
+	border-right: 15px rgba(50, 130, 186, 1) solid;
+	background: rgba( 86, 161, 213, 1);
+	min-height: 50px;
+}
+.top{
+	border-top: 15px rgba(50, 130, 186, 1) solid;
+}
+.bottom{
+	border-bottom: 15px rgba(50, 130, 186, 1) solid;
+}
+.lightBlueShell h4{
+	text-align: center;
+	font-size: 12px;
+	font-weight: 400;
+	padding: 5px 0px;
+	background: transparent url(../images/venueGradient.jpg) top center repeat-y;
+	color: #fff;
+}
+.cityDesc, .mfp-video{
+	float: left;
+	margin: 15px;
+}
+.cityDesc{
+	text-align: left;
+	width: 347px;
+	margin-right: 0px;
+}
+.cityDesc h2{
+	font-size: 23pt;
+	font-weight: 500;
+	color: #fff;
+}
+.mfp-video{
+	height:197px;
+	width:350px;
+	background: rgba(8, 40, 67, 1);
+}
+
+.darkBlueShell{
+	color:#fff;
+	background: rgba(7, 36, 60, 1) url(../images/darkBlueGradient.png) top left no-repeat;
+	height: 215px;
+	width: 772px;
+}
+.artistHeader{
+	margin: 0px 0px 5px 7px;
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+	padding: 15px 0px 12px 25px;
+}
+#leftArrow, #rightArrow, .artistWindow{
+	float: left;
+}
+#leftArrow, #rightArrow{
+	background-image: url(../images/CitiesInBlueSprites.png);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 16px;
+	cursor: pointer;	
+}
+#leftArrow{
+	background-position: 0px -26px;
+	margin: 60px 0px 0px 8px;
+}
+#rightArrow{
+	background-position: -17px -26px;
+	margin: 60px 0px 0px 0px;
+}
+.artistWindow{
+	width:710px;
+	overflow: hidden;
+	position: relative;
+	margin: 0px 7px;
+	height: 150px;
+}
+.artistContainer {
+	height: 150px;
+	width: 710px;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.artistContainer ul, .barList ul{
+	margin:  0px;
+	padding: 0px;
+	display: block;
+	list-style-type: none;
+	/*-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;*/
+}
+.artistContainer ul li{
+	float: left;
+	margin-left:10px;
+	display: inline-block;
+	width:350px;
+	height: 150px;
+	background: transparent url(../images/artistListBgnd.jpg) top left repeat-x;
+}
+.artistContainer ul li:first-child{
+	margin-left: 0px;
+}
+.aIll{
+	display: inline-block;
+	width: 110px;
+	height: 150px;
+	float:left;
+}
+
+.fLeft{
+	float: left;
+}
+
+.fRight{
+	float: right;
+}
+.artist{
+	width: 220px;
+	float: left;
+	margin: 11px 0px 0px 10px;
+}
+.aDate{
+	color: #56a1d5;
+	font-size: 14px;
+	margin-top: 3px;
+}
+.aWriteUp{
+	margin-top: 9px;
+	line-height: 13px;
+	font-weight: 100;
+	font-size: 12px;
+}
+
+.blueDevider{
+	height:2px;
+	background: rgb(151, 202, 237);
+	width:100%;
+	display: block;
+}
+.cIcon{
+	float: left;
+	margin-left:17px;
+}
+
+.singleBar{
+	font-size: 11px;
+	min-height:80px; 
+}
+.singleBar a{
+	text-decoration: none;
+}
+
+.barName{
+	color: #063a63;
+	font-weight: 600;
+	font-size: 16px;
+}
+.singleBar p{
+	line-height: 15px;
+	display: block;
+	/*-webkit-margin-before: .5em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;*/
+}
+.barList{
+	width: 540px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+.barList ul li{
+	float: left;
+	width: 160px;
+	padding-right:20px;
+}
+.barList ul li:first-child{
+
+}
+/* ======================= cmf bar rules ====================== */
+#cmfBar{
+	padding: 10px 0px;
+	width: 670px;
+	margin: 0 auto;
+	background-color: #fff;
+	text-align: center;
+}
+/* ======================= cmf bar rules ====================== */
+/* ======================= general clearfix rule ====================== */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
